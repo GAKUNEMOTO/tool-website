@@ -1,7 +1,7 @@
 name: 新アイテムのリクエスト
 description: File a bug report
 title: "[リクエスト]: "
-labels: ["feature"]
+labels: ["features"]
 projects: []
 # assignees:
 #   - octocat
