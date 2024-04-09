@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import { cn } from "@/lib/utils";
+import Sidebar from "./components/sidebar";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +22,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ja">
+      <body className={cn(inter.className, 'h-dvh flex flex-col')} suppressHydrationWarning>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header/>
+            <main className="flex flex-1">
+             <Sidebar/>
+              <div className="flex-1 bg-muted/30">{children}</div>
+            </main>
+            <Footer/>
+          </ThemeProvider>
+          </body>
     </html>
   );
 }
