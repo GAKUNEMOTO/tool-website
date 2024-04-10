@@ -3,6 +3,7 @@ description: お気軽に追加ください
 title: "[リクエスト]: "
 labels: ["feature"]
 projects: []
+
 body:
   - type: input
     id: title
@@ -10,13 +11,14 @@ body:
       label: タイトル
     validations:
       required: true
-   - type: input
+
+  - type: input
     id: href
     attributes:
       label: URL
     validations:
       required: false
-      
+
   - type: dropdown
     id: version
     attributes:
@@ -27,7 +29,8 @@ body:
         - 1.0.3 (Edge)
       default: 0
     validations:
-      required: true   
+      required: true
+
   - type: dropdown
     id: tag
     validations:
@@ -43,4 +46,3 @@ body:
         - public-domain
         - video
         - free
-
