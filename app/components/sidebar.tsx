@@ -20,7 +20,10 @@ export default function Sidebar() {
         {mainTAGS.map((tagId) => (
           <Button 
             variant="ghost" 
-            className={cn('justify-start', tags?.includes(tagId) && 'bg-accent' )} 
+            className={cn(
+              'justify-start',
+              tags?.includes(tagId) && 'bg-accent'
+            )}
             key={tagId} 
             asChild
             

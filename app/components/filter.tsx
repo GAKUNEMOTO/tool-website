@@ -16,9 +16,9 @@ export default function Filter() {
       <div className="flex items-center space-x-2">
         <Switch onCheckedChange={v => {
             if(v){
-                router.replace(`/?tags=${addTagSearchParams('free', true)}`)
+              router.replace(`?tags=${addTagSearchParams('free', true)}`);
             } else {
-                router.replace(`/?tags=${removeTagSearchParams('free')}`)
+              router.replace(`?tags=${removeTagSearchParams('free')}`);
             }
        }}/>
         <Label htmlFor="free">無料</Label>
