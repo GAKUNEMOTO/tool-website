@@ -1,7 +1,6 @@
 'use client';
 
-import { TagId } from "@/data/tag";
-import { mainTAGS } from "@/lib/tag";
+import { TagId, mainTAGS } from "@/data/tag";
 import { useSearchParams } from "next/navigation";
 
 export const useTagParams = () => {

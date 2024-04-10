@@ -11,7 +11,7 @@ npm run dev
 ```
 ## アイテムの追加（コードベース）
 
-- [data/items.ts](edit/main/data/items.ts)　にアイテムを追加
+- [edit/main/data/items.ts](/edit/main/data/items.ts)　にアイテムを追加
 - [public/images](/tree/main/public/images)　にサムネイルを追加
 
 ## アイテムの追加　（リクエストベース）

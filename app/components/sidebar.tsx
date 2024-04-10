@@ -2,9 +2,10 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import React from 'react';
-import { getTagLavel, mainTAGS } from '@/lib/tag';
+import { getTagLavel} from '@/lib/tag';
 import Filter from './filter';
 import { useTagParams } from '@/hooks/tagParams';
+import { mainTAGS } from '@/data/tag';
 
 export default function Sidebar() {
   const {addTagSearchParams} = useTagParams();

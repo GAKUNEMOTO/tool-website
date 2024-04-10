@@ -1,11 +1,4 @@
-import { TagId, allTags } from "@/data/tag";
-
-
-export const mainTAGS: TagId[] = [
-'illuste',
-'photo',
-'icon',
-];
+import { TagId, allTags, mainTAGS } from "@/data/tag";
 
 export const getTagLavel = (tagId: TagId) => {
     return allTags.find((tag) => tag.id === tagId)?.label ?? '';

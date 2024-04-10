@@ -5,8 +5,9 @@ import {
     SheetContent,
     SheetTrigger
 } from "@/components/ui/sheet";
+import { mainTAGS } from "@/data/tag";
 import { useTagParams } from "@/hooks/tagParams";
-import { getTagLavel, mainTAGS } from "@/lib/tag";
+import { getTagLavel} from "@/lib/tag";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 

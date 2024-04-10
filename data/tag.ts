@@ -6,6 +6,17 @@ export const allTags = [
 { id: 'public-domain', label:'パブリックドメイン'},
 { id: 'free', label:'無料'},
 { id: 'video', label:'ビデオ'},
+{ id: 'font', label:'フォント'},
+{ id: 'icon-font', label:'アイコンフォント'},
 ] as const;
 
 export type TagId = typeof allTags[number]['id'];
+
+
+export const mainTAGS: TagId[] = [
+    'illuste',
+    'photo',
+    'icon',
+    'font',
+    'icon-font',
+    ];
