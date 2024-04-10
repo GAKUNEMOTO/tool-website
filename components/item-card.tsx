@@ -6,25 +6,25 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ItemCard({title, tags, href, imageURL}: 
+export default function ItemCard({title, tags, href, id}: 
     {
         title:string; 
         tags: TagId[]; 
         href:string;
-        imageURL:string;
+        id:string;
     }) {
 
   return (
     <div>
         {/* shadow-smが良き */}
-        <div className="hover:shadow-lg transition duration-500 aspect-video relative p-4 border rounded-md shadow-sm bg-card">
+        <div className="hover:shadow-lg transition duration-500 relative p-4 border rounded-md shadow-sm bg-card">
             <div className='aspect-video overflow-hidden border relative mb-2 rounded'  style={{ overflow: 'hidden' }}>
-                <Image fill objectFit='cover'  src={imageURL} alt="" />
+                <Image fill className="object-cover" src={`/tool-web/images/${id}.png`} alt="" />
             </div>
 
                 <h2 className='text-sm font-semibold'>
                     {/* ArrowUpRightは原則他のサイトに飛ぶときにつけるIcon  */}
-                    <Link href={href} target="_bank" >
+                    <Link href={href} target="_blank" >
                         {title}
                     <span className='absolute inset-0'></span>
                     <ArrowUpRight className="inline" size={10}/></Link>
@@ -36,7 +36,7 @@ export default function ItemCard({title, tags, href, imageURL}:
                         href={`/${tagId}`}
                          className='border whitespace-nowrap text-muted-foreground bg-muted rounded text-xs px-1 py-1.5'
                          >
-                        {getTagLavel(tagId)};
+                        {getTagLavel(tagId)}
                     </Link>
                     ))}
 

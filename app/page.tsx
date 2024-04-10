@@ -27,7 +27,7 @@ export default function Page() {
     {curentItems.map((item) =>  
     <ItemCard 
     key={item.title}
-    imageURL={item.imageURL}
+    id={item.id}
     title={item.title} 
     href={item.href}
     tags={item.tags}
