@@ -8,6 +8,7 @@ export const allTags = [
 { id: 'video', label:'ビデオ'},
 { id: 'font', label:'フォント'},
 { id: 'icon-font', label:'アイコンフォント'},
+{ id: 'audio', label:'音素材'},
 ] as const;
 
 export type TagId = typeof allTags[number]['id'];
@@ -19,4 +20,5 @@ export const mainTAGS: TagId[] = [
     'icon',
     'font',
     'icon-font',
+    'audio',
     ];
