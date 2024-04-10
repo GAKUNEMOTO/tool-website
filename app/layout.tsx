@@ -41,7 +41,7 @@ export default function RootLayout({
               </Suspense>
               <div className="flex-1 bg-muted/30">
                 <Suspense>
-                {children}
+                  {children}
                 </Suspense>
                 </div>
             </main>

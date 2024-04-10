@@ -19,7 +19,7 @@ export default function ItemCard({title, tags, href, id}:
         {/* shadow-smが良き */}
         <div className="hover:shadow-lg transition duration-500 relative p-4 border rounded-md shadow-sm bg-card">
             <div className='aspect-video overflow-hidden border relative mb-2 rounded'  style={{ overflow: 'hidden' }}>
-                <Image fill className="object-cover" src={`/tool-web/images/${id}.png`} alt="" />
+                <Image fill className="object-cover" src={`tool-web/images/${id}.png`} alt="" />
             </div>
 
                 <h2 className='text-sm font-semibold'>

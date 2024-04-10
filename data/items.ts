@@ -31,6 +31,12 @@ export const allItems: Item[] = [
         href:'https://vectorshelf.com/' ,
         tags:['no-license-required','free','illuste'],
     },
+    {
+        id:'simple-Icons',
+        title:'Simple-Icons',
+        href:'https://simpleicons.org/?q=gitHub' ,
+        tags:['no-license-required','free','icon'],
+    },
 
     // {
     //     imageURL:'',
