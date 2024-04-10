@@ -2,7 +2,7 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import React from 'react';
-import { getTagLavel} from '@/lib/tag';
+import { getTagLabel} from '@/lib/tag';
 import Filter from './filter';
 import { useTagParams } from '@/hooks/tagParams';
 import { mainTAGS } from '@/data/tag';
@@ -26,7 +26,7 @@ export default function Sidebar() {
             
           >
             <Link href={`/?tags=${addTagSearchParams(tagId)}`}>
-                {getTagLavel(tagId)} 
+                {getTagLabel(tagId)} 
             </Link>
           </Button>
         ))}

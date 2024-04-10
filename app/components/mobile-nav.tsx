@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/sheet";
 import { mainTAGS } from "@/data/tag";
 import { useTagParams } from "@/hooks/tagParams";
-import { getTagLavel} from "@/lib/tag";
+import { getTagLabel} from "@/lib/tag";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 
@@ -25,7 +25,7 @@ export default function MobileNav() {
         {mainTAGS.map((tagId) => (
             <Button variant="ghost" className="justfiy-start" key={tagId} asChild>
                <Link href={`/?tags=${addTagSearchParams(tagId)}`}>
-                {getTagLavel(tagId)} 
+                {getTagLabel(tagId)} 
               </Link>
                 </Button>
   

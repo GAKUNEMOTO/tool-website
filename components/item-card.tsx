@@ -1,5 +1,5 @@
 import { TagId } from "@/data/tag";
-import { getTagLavel } from "@/lib/tag";
+import { getTagLabel } from "@/lib/tag";
 import { Tag } from "@/types/tag";
 import { Label } from "@radix-ui/react-dropdown-menu";
 import { ArrowUpRight } from "lucide-react";
@@ -36,7 +36,7 @@ export default function ItemCard({title, tags, href, id}:
                         href={`/${tagId}`}
                          className='border whitespace-nowrap text-muted-foreground bg-muted rounded text-xs px-1 py-1.5'
                          >
-                        {getTagLavel(tagId)}
+                        {getTagLabel(tagId)}
                     </Link>
                     ))}
 

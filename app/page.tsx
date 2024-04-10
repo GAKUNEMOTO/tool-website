@@ -11,7 +11,7 @@ export default function Page() {
   const searchParams = useSearchParams();
   const tags = (searchParams.get('tags') as string)?.split(',');
     const curentItems = allItems.filter(item => {
-      if(!tags) {
+      if(!tags || tags?.length === 0) {
         return true;
       }
 
@@ -19,7 +19,7 @@ export default function Page() {
 
     });
     if(curentItems.length === 0){
-        return <p className='text-sm text-muted-foreground my-10'>このページは存在しません</p>
+        return <p className='text-sm text-muted-foreground my-10 text-center'>このページは存在しません</p>
     }
     
   return (

@@ -4,7 +4,8 @@ import { TagId, mainTAGS } from "@/data/tag";
 import { useSearchParams } from "next/navigation";
 
 export const useTagParams = () => {
-    const defaultTags = (useSearchParams().get('tags')?.split(',').filter(Boolean)??[]) as TagId[];
+    const defaultTags = (useSearchParams().get('tags')?.split(',').filter(Boolean)??
+    []) as TagId[];
 
     const addTagSearchParams = (tag:TagId, keepMainTag? : boolean) => {
         const src  = keepMainTag ? defaultTags : defaultTags.filter((t: TagId) => !mainTAGS.includes(t))

@@ -1,8 +1,8 @@
-import { TagId } from "@/data/tag";
+import { TagId } from '@/data/tag';
 
-export type Item ={
-    id: string;
-    href: string;
-    title: string;
-    tags: TagId[];
-}
+export type Item = {
+  id: string;
+  href: string;
+  title: string;
+  tags: TagId[];
+};
