@@ -3,17 +3,13 @@
 import ItemCard from '@/components/item-card';
 import {allItems } from '@/data/items';
 import { TagId } from '@/data/tag';
+import { useSearchParams } from 'next/navigation';
 
 import React from 'react';
 
-export default function Page({
-  searchParams
-} : {
-  searchParams: {
-    [key: string]: string | string[] | undefined
-  }
-}) {
-  const tags = (searchParams.tags as string)?.split(',');
+export default function Page() {
+  const searchParams = useSearchParams();
+  const tags = (searchParams.get('tags') as string)?.split(',');
     const curentItems = allItems.filter(item => {
       if(!tags) {
         return true;

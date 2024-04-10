@@ -8,6 +8,7 @@ import Header from "./components/header";
 import { cn } from "@/lib/utils";
 import Sidebar from "./components/sidebar";
 import { AppConfig } from "@/app.config";
+import { Suspense } from "react";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -31,10 +32,18 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Suspense>
             <Header/>
+            </Suspense>
             <main className="flex flex-1">
-             <Sidebar/>
-              <div className="flex-1 bg-muted/30">{children}</div>
+              <Suspense>
+                <Sidebar/>
+              </Suspense>
+              <div className="flex-1 bg-muted/30">
+                <Suspense>
+                {children}
+                </Suspense>
+                </div>
             </main>
             <Footer/>
           </ThemeProvider>
