@@ -9,6 +9,7 @@ export default function Filter() {
     const {addTagSearchParams, removeTagSearchParams} = useTagParams();
     const router = useRouter();
   return (
+    <>
     <div>
       <h2 className='font-semibold text-muted-foreground text-sm mb-4'>
         絞り込み
@@ -24,5 +25,18 @@ export default function Filter() {
         <Label htmlFor="free">無料</Label>
       </div>
     </div>
+    <div>
+      <div className="flex items-center space-x-2">
+        <Switch onCheckedChange={v => {
+            if(v){
+              router.replace(`?tags=${addTagSearchParams('no-license-required', true)}`);
+            } else {
+              router.replace(`?tags=${removeTagSearchParams('no-license-required')}`);
+            }
+       }}/>
+        <Label htmlFor="free">ライセンス不要</Label>
+      </div>
+    </div>
+    </>
   );
 }
