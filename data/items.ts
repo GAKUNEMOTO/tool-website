@@ -5,7 +5,7 @@ export const allItems: Item[] = [
         id:'いらすとや',
         title:'いらすとや',
         href:'https://www.irasutoya.com/' ,
-        tags:['no-license-required', 'illuste'],
+        tags:['no-license-required','free','illuste'],
     },    
     {
         id:'pixaboy',
@@ -27,7 +27,7 @@ export const allItems: Item[] = [
     },
     {
         id:'vector-shelf',
-        title:'vectoreShelf',
+        title:'vectorShelf',
         href:'https://vectorshelf.com/' ,
         tags:['no-license-required','free','illuste'],
     },
@@ -36,6 +36,66 @@ export const allItems: Item[] = [
         title:'Simple-Icons',
         href:'https://simpleicons.org/?q=gitHub' ,
         tags:['no-license-required','free','icon'],
+    },
+    {
+        id:'ionic',
+        title:'Ionicons',
+        href:'https://ionic.io/ionicons' ,
+        tags:['no-license-required','free','icon'],
+    },
+    {
+        id:'dotown',
+        title:'DotTown',
+        href:'https://dotown.maeda-design-room.net/' ,
+        tags:['no-license-required','free','illuste'],
+    },
+    {
+        id:'icoon',
+        title:'Icoon',
+        href:'https://icooon-mono.com/' ,
+        tags:['no-license-required','free','icon'],
+    },
+    {
+        id:'oden',
+        title:'O-Den',
+        href:'https://o-dan.net/ja/' ,
+        tags:['no-license-required','free','illuste'],
+    },
+    {
+        id:'shigureni',
+        title:'Shigureni',
+        href:'https://www.shigureni.com/' ,
+        tags:['no-license-required','free','illuste'],
+    },
+    {
+        id:'oishiso',
+        title:'Oishiso',
+        href:'https://oishiso.jp/' ,
+        tags:['no-license-required','free','illuste'],
+    },
+    {
+        id:'otologic',
+        title:'音ロジック',
+        href:'https://otologic.jp/' ,
+        tags:['no-license-required','free','audio'],
+    },
+    {
+        id:'koukaonlab',
+        title:'効果音ラボ',
+        href:'https://soundeffect-lab.info/' ,
+        tags:['no-license-required','free','audio'],
+    },
+    {
+        id:'artlist',
+        title:'Artlist',
+        href:'https://artlist.io/royalty-free-music' ,
+        tags:['free','audio'],
+    },
+    {
+        id:'dova',
+        title:'DOVA-SYNDROME',
+        href:'https://dova-s.jp/' ,
+        tags:['free','audio'],
     },
 
     // {
